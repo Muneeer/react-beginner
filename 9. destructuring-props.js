@@ -34,8 +34,10 @@ function Hello() {
     </div>
   );
 }
-
-const Name = ({ name, job }) => {
+// const Name = ({ name, job }) => {
+//OR
+const Name = (props) => {
+  const { name, job } = props;
   return (
     <div>
       <h1>Introduction</h1>
